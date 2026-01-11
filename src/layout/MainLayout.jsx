@@ -8,7 +8,7 @@ function MainLayout({ children }) {
   const { profile } = useAuth();
   const [isOpen, setIsOpen] = useState(false);
 
-  const userName = profile.userName;
+  const userName = profile?.userName;
 
   return (
     <section className="flex h-screen">
