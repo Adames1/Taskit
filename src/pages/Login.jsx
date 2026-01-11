@@ -24,7 +24,7 @@ function Login() {
       await loginFirebase(data.email, data.password);
       navigate("/");
 
-      toast.success("Te has registrado correctamente!");
+      toast.success("Haz iniciado sesion!");
 
       reset();
     } catch (error) {
